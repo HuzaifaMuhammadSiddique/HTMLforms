@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Basic Info Form</h1>
+    </header>
+    <main>
+        <div>
+            <!--<h2 id="form1_heading"><u>Basic Info Form</u></h2>-->
+
+            <form action="/source.php"> <!--Please note that this file name is just a placeholder-->
+
+                <!--First Name-->
+                <label for="first_name">First Name:</label><br>
+                <input type="text" id="first_name" name="first_name"><br>
+                <br>
+
+                <!--Last Name-->
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" id="last_name" name="last_name"><br>
+                <br>
+
+                <!--Age-->
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age"><br>
+                <br>
+
+                <!--Education-->
+                <p><b><u>Select your education background:</u></b></p>
+
+                <!--KG-->
+                <input type="radio" name="education" value="kindergarden" id="kg">
+                <label for="kg">Kindergarden</label><br>
+                <!--PS-->
+                <input type="radio" name="education" value="primaryschool" id="ps">
+                <label for="ps">Primary School</label><br>
+                <!--SS-->
+                <input type="radio" name="education" value="secondaryschool" id="ss">
+                <label for="ss">Secondary School</label><br>
+                <!--HS-->
+                <input type="radio" name="education" value="highschool" id="hs">
+                <label for="hs">High School</label><br>
+                <!--Diploma-->
+                <input type="radio" name="education" value="diploma" id="diploma">
+                <label for="diploma">Diploma</label><br>
+                <!--College-->
+                <input type="radio" name="education" value="college" id="clg">
+                <label for="clg">College</label><br>
+                <!--PHD-->
+                <input type="radio" name="education" value="phd" id="phd">
+                <label for="phd">PhD</label><br>
+                <!--Uneducated-->
+                <input type="radio" name="education" value="uneducated" id="uneducated">
+                <label for="uneducated">Uneducated</label><br>
+
+                
+                <!--Subjects-->
+                <p><b><u>Please select your favorite subject(s):</u></b></p>
+                <p><i>Note: You can select more than one subject.</i></p>
+
+                <!--Maths-->
+                <input type="checkbox" id="math" name="subject1" value="mathematics">
+                <label for="math">Mathematics</label><br>
+                <!--English-->
+                <input type="checkbox" id="eng" name="subject2" value="english">
+                <label for="eng">English</label><br>
+                <!--Physics-->
+                <input type="checkbox" id="phy" name="subject3" value="physics">
+                <label for="phy">Physics</label><br>
+                <!--Chemistry-->
+                <input type="checkbox" id="chem" name="subject4" value="chemistry">
+                <label for="chem">Chemistry</label><br>
+                <!--Biology-->
+                <input type="checkbox" id="bio" name="subject5" value="biology">
+                <label for="bio">Biology</label><br>
+                <!--Geography-->
+                <input type="checkbox" id="geo" name="subject6" value="geography">
+                <label for="geo">Geography</label><br>
+                <!--History-->
+                <input type="checkbox" id="history" name="subject7" value="history">
+                <label for="history">History</label><br>
+                <!--Religion-->
+                <input type="checkbox" id="religion" name="subject8" value="religion">
+                <label for="religion">Religion</label><br>
+                <br>
+
+                <!--Submit Button-->
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <br>
+        <p><i>This form was created using purely HTML.</i></p>
+        <p><i>Created by: Huzaifa Muhammad Siddique</i></p>
+    </footer>
+</body>
+
+</html>
