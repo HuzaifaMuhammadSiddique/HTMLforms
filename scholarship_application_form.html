@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scholarship Application Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Scholarship Application Form</h1>
+    </header>
+    <main>
+        <div>
+            <form action="source.php"> <!--Please note that this file name (i.e. "source.php") is just a placeholder-->
+                
+                <h3>Personal Information</h3>
+                
+                <!-- PREFIX -->
+                <label for="prefix">
+                    Prefix
+                </label>
+                <br>
+                <select name="prefix" id="prefix" aria-placeholder="prefix">
+                    <option value="none">No option selected</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="dr">Dr.</option>
+                    <option value="sir">Sir</option>
+                    <option value="lord">Lord</option>
+                    <option value="lady">Lady</option>
+                </select>
+                <br>
+                <br>
+
+                <!-- FULL NAME -->
+                <label for="full_name">
+                    Full Name <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="text" id="full_name" name="full_name" placeholder="first middle last" required>
+                <br>
+                <br>
+
+                <!-- DATE OF BIRTH -->
+                <label for="dob">
+                    Date of Birth <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="date" name="dob" id="dob" required>
+                <br>
+                <br>
+
+                <!-- FATHER FULL NAME -->
+                <label for="father_full_name">
+                    Father's Full Name <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="text" id="father_full_name" name="father_full_name" placeholder="first middle last"
+                    required>
+                <br>
+                <br>
+
+                <!-- MOTHER FULL NAME -->
+                <label for="mother_full_name">
+                    Mother's Full Name <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="text" id="mother_full_name" name="mother_full_name" placeholder="first middle last"
+                    required>
+                <br>
+                <br>
+
+                <!--EMAIL-->
+                <label for="email">
+                    Email <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+                <br>
+                <br>
+
+                <hr>
+
+                <h3>Marks</h3>
+
+                <!-- MARKS IN HIGH SCHOOL -->
+                <label for="marks">
+                    Marks in High School (Out of 100) <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="number" name="marks" id="marks" min="0" max="100" required>
+                <br>
+                <br>
+
+                <!-- HIGH SCHOOL TRANSCRIPT -->
+                <label for="transcript">
+                    Upload your High School Transcript <span class="asterisk">*</span>
+                </label>
+                <br>
+                <input type="file" id="transcript" name="transcript" required>
+                <br>
+                <br>
+
+                <hr>
+
+                <h3>Essay Questions</h3>
+
+                <label for="q1">
+                    <b>Why do you want this scholarship?</b> <span class="asterisk">*</span>
+                </label>
+                <br>
+                <textarea id="q1" name="q1" rows="10" cols="100" required></textarea>
+                <br>
+                <br>
+
+                <label for="q1">
+                    <b>Briedly tell about your weaknesses.</b> <span class="asterisk">*</span>
+                </label>
+                <br>
+                <textarea id="q1" name="q1" rows="10" cols="100" required></textarea>
+                <br>
+
+
+
+
+
+
+
+
+                <!-- SUBMIT -->
+                <br>
+                <input type="submit" value="Submit">
+                <br>
+                <br>
+                <input type="reset">
+
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <br>
+            <br>
+            <i>Note: fields marked with <span class="asterisk">*</span> must be filled.</i>
+            <p><i>Created by: Huzaifa Muhammad Siddique</i></p>
+        </div>
+    </footer>
+</body>
+
+</html>
